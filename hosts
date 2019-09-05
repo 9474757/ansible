@@ -1,0 +1,10 @@
+[masters]
+master ssh_port=22 ansible_host=localhost ansible_user=root
+
+[workers]
+worker1 ssh_port=22 ansible_host=10.10.8.122 ansible_user=root
+worker2 ssh_port=22 ansible_host=10.10.8.123 ansible_user=root
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_connection=ssh
